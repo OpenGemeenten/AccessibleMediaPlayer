@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg style="display: none;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <symbol id="chevron-up" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4.59,20.59L7.41,23.41L16.59,14.25L25.77,23.41L28.59,20.59L16.59,8.59L4.59,20.59Z" style="fill-rule:nonzero;"/>
+    </symbol>
+    <symbol id="chevron-down" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="M28.59,11.41L25.77,8.59L16.59,17.75L7.41,8.59L4.59,11.41L16.59,23.41L28.59,11.41Z" style="fill-rule:nonzero;"/>
+    </symbol>
+    <symbol id="chevron-left" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21.18,28L24,25.18L14.84,16L24,6.82L21.18,4L9.18,16L21.18,28Z" style="fill-rule:nonzero;"/>
+    </symbol>
+    <symbol id="chevron-right" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12,4L9.18,6.82L18.34,16L9.18,25.18L12,28L24,16L12,4Z" style="fill-rule:nonzero;"/>
+    </symbol>
+    <symbol id="arrow-up" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,16L2.82,18.82L14,7.66L14,32L18,32L18,7.66L29.18,18.82L32,16L16,0L0,16Z" style="fill-rule:nonzero;"/>
+    </symbol>
+    <symbol id="arrow-down" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32,16L29.18,13.18L18,24.34L18,0L14,0L14,24.34L2.82,13.18L0,16L16,32L32,16Z" style="fill-rule:nonzero;"/>
+    </symbol>
+    <symbol id="arrow-left" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16,32L18.82,29.18L7.66,18L32,18L32,14L7.66,14L18.82,2.82L16,0L0,16L16,32Z" style="fill-rule:nonzero;"/>
+    </symbol>
+    <symbol id="arrow-right" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16,0L13.18,2.82L24.34,14L0,14L0,18L24.34,18L13.18,29.18L16,32L32,16L16,0Z" style="fill-rule:nonzero;"/>
+    </symbol>
+</svg>

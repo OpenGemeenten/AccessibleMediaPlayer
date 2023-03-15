@@ -1,0 +1,148 @@
+
+.mediaplayer .transcript {
+    --color-border-horizontal: grey;
+    --font-size: 1em;
+}
+
+.mediaplayer .transcript.transcript--open {
+    --box-shadow: 0 0.25rem 1rem 0 rgba(0, 0, 0, 0.16);
+}
+
+.mediaplayer .transcript__button {
+    --color-background: white;
+    --border-color: transparent;
+    --color: black;
+    --font-family: Arial, Helvetica, sans-serif;
+    --font-size: 1.167em;
+    --font-style: normal;
+    --font-weight: bold;
+    --line-height: 1.25;
+}
+
+.mediaplayer .transcript__button:focus,
+.mediaplayer .transcript__button:hover,
+.mediaplayer .transcript__button[aria-expanded="true"] {
+    --border-color: transparent;
+}
+
+.mediaplayer .transcript__toggle-icon {
+    --color-icon: black;
+}
+
+.mediaplayer .transcript__panel {
+    --color-background: white;
+    --border-color: transparent;
+}
+
+.mediaplayer .transcript__content {
+    --color: black;
+    --font-family: monospace;
+    --font-size: 1em;
+    --font-style: normal;
+    --font-weight: normal;
+    --line-height: 1.25;
+}
+
+/* Layout */
+.mediaplayer .transcript {
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    margin-bottom: 0;
+}
+
+.mediaplayer .transcript *:focus {
+    outline: 3px solid #75A3E8 !important;
+}
+
+.mediaplayer .transcript__header {
+    margin: 0;
+    font-size: inherit;
+}
+
+.mediaplayer .transcript__button {
+    display: flex;
+    align-items: center;
+    border-left-style: solid;
+    border-width: 0 0 0 0.25rem;
+    padding: 1rem 1rem 1rem calc(1rem - 0.25rem);
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 500ms ease-in-out, border 500ms ease-in-out;
+    text-align: left;
+}
+
+.mediaplayer .transcript__toggle-icon {
+    width: 1.5rem;
+    height: 1.5rem; /* IE */
+    margin-left: auto;
+    flex-shrink: 0;
+    transition: transform 200ms ease-in-out;
+}
+
+.mediaplayer .transcript.transcript--open .transcript__toggle-icon {
+    transform: rotate(180deg);
+}
+
+.mediaplayer .transcript__panel {
+    border-left-style: solid;
+    border-width: 0 0 0 0.25rem;
+    transition: border 500ms ease-in-out;
+    overflow: hidden;
+}
+
+.mediaplayer .transcript__content {
+    padding: 1rem 1rem 1rem calc(1rem - 0.25rem);
+}
+
+.mediaplayer .transcript pre {
+    white-space: pre-line;
+}
+
+.mediaplayer .transcript__content > :first-child {
+    margin-top: 0;
+}
+
+.mediaplayer .transcript__content > :last-child {
+    margin-bottom: 0;
+}
+
+.mediaplayer .transcript {
+    border-top-color: var(--color-border-horizontal, grey);
+    border-bottom-color: var(--color-border-horizontal, grey);
+    font-size: var(--font-size, 1rem);
+}
+
+.mediaplayer .transcript.transcript--open {
+    box-shadow: var(--box-shadow, 0 0.25rem 1rem 0 rgba(0, 0, 0, 0.16));
+}
+
+.mediaplayer .transcript__button {
+    background-color: var(--color-background, white);
+    border-left-color: var(--border-color, transparent);
+    color: var(--color, black);
+    font-family: var(--font-family, inherit);
+    font-size: var(--font-size, 1.167em);
+    font-style: var(--font-style, normal);
+    font-weight: var(--font-weight, bold);
+    line-height: var(--line-height, inherit);
+}
+
+.mediaplayer .transcript__toggle-icon {
+    fill: var(--color-icon, black);
+}
+
+.mediaplayer .transcript__panel {
+    background-color: var(--color-background, white);
+    border-left-color: var(--border-color, transparent);
+}
+
+.mediaplayer .transcript__content {
+    color: var(--color, black);
+    font-family: var(--font-family, monospace);
+    font-size: var(--font-size, 1.5em);
+    font-style: var(--font-style, normal);
+    font-weight: var(--font-weight, normal);
+    line-height: var(--line-height, inherit);
+}

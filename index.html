@@ -1,0 +1,356 @@
+<html lang="nl" dir="ltr">
+<head>
+    <title>Accessible Media Player</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/Resources/Public/Css/Vendor/mediaelementplayer-5.1.0.css?1678842900" rel="stylesheet">
+    <link href="/Resources/Public/Css/Vendor/Plugins/A11y/a11y-5.1.0.css?1678842900" rel="stylesheet">
+    <link href="/Resources/Public/Css/OpenGemeentenMediaPlayer.css?1678842900" rel="stylesheet">
+    <link href="/Resources/Public/Css/OpenGemeentenMediaPlayerTranscript.css?1678842900" rel="stylesheet">
+    <link href="/Resources/Public/Css/OpenGemeentenMain.css?1678842900" rel="stylesheet">
+    <script src="/Resources/Public/Js/Vendor/mediaelement-and-player-5.1.0.min.js?1678842900"></script>
+    <script src="/Resources/Public/Js/Vendor/Renderers/vimeo-5.1.0.min.js?1678842900"></script>
+    <script src="/Resources/Public/Js/Vendor/Plugins/A11y/a11y-5.1.0.js?1678842900"></script>
+    <script src="/Resources/Public/Js/OpenGemeentenMediaPlayer-MediaElementPlayerExtended.js?1678842900"></script>
+    <script src="/Resources/Public/Js/OpenGemeentenMediaPlayer-MediaPlayer.js?1678842900"></script>
+    <script src="/Resources/Public/Js/OpenGemeentenMediaPlayer-Transcript.js?1678842900"></script>
+    <script>
+        /*<![CDATA[*/
+        var OpenGemeenten = OpenGemeenten || {};
+        OpenGemeenten.opengemeenten_mediaplayer = {
+            "i18n": {
+                "nl": {
+                    "mejs.plural-form": "1",
+                    "mejs.download-file": "Bestand downloaden",
+                    "mejs.install-flash": "U gebruikt een browser die geen Flash Player heeft ingeschakeld of ge\u00efnstalleerd. Zet de Flash Player plug-in of download de nieuwste versie van https:\/\/get.adobe.com\/flashplayer\/",
+                    "mejs.fullscreen": "Volledig scherm",
+                    "mejs.play": "Afspelen",
+                    "mejs.pause": "Pauzeer",
+                    "mejs.time-slider": "Tijd schuifbalk",
+                    "mejs.time-help-text": "Gebruik pijl naar links\/rechts om per seconde te springen, pijl omhoog\/omlaag om per tien seconden te springen.",
+                    "mejs.live-broadcast": "Live uitzending",
+                    "mejs.volume-help-text": "Gebruik pijl omhoog\/omlaag om het volume te verhogen\/verlagen.",
+                    "mejs.unmute": "Geluid aan",
+                    "mejs.mute": "Geluid uit",
+                    "mejs.volume-slider": "Volume schuifbalk",
+                    "mejs.video-player": "Videospeler",
+                    "mejs.audio-player": "Audiospeler",
+                    "mejs.captions-subtitles": "Bijschriften\/ondertiteling",
+                    "mejs.captions-chapters": "Hoofdstukken",
+                    "mejs.none": "Geen",
+                    "mejs.afrikaans": "Afrikaans",
+                    "mejs.albanian": "Albanees",
+                    "mejs.arabic": "Arabisch",
+                    "mejs.belarusian": "Wit-Russisch",
+                    "mejs.bulgarian": "Bulgaars",
+                    "mejs.catalan": "Catalaans",
+                    "mejs.chinese": "Chinees",
+                    "mejs.chinese-simplified": "Chinees (Vereenvoudigd)",
+                    "mejs.chinese-traditional": "Chinees (Traditioneel)",
+                    "mejs.croatian": "Kroatisch",
+                    "mejs.czech": "Tsjechisch",
+                    "mejs.danish": "Deens",
+                    "mejs.dutch": "Nederlands",
+                    "mejs.english": "Engels",
+                    "mejs.estonian": "Estlands",
+                    "mejs.filipino": "Filipijns",
+                    "mejs.finnish": "Finse",
+                    "mejs.french": "Frans",
+                    "mejs.galician": "Galicisch",
+                    "mejs.german": "Duits",
+                    "mejs.greek": "Grieks",
+                    "mejs.haitian-creole": "Ha\u00eftiaanse Creoolse",
+                    "mejs.hebrew": "Hebreeuws",
+                    "mejs.hindi": "Hindi",
+                    "mejs.hungarian": "Hongaars",
+                    "mejs.icelandic": "Icelandic",
+                    "mejs.indonesian": "Indonesisch",
+                    "mejs.irish": "Iers",
+                    "mejs.italian": "Italiaans",
+                    "mejs.japanese": "Japans",
+                    "mejs.korean": "Koreaans",
+                    "mejs.latvian": "Letlands",
+                    "mejs.lithuanian": "Litouws",
+                    "mejs.macedonian": "Macedonisch",
+                    "mejs.malay": "Maleis",
+                    "mejs.maltese": "Maltese",
+                    "mejs.norwegian": "Noors",
+                    "mejs.persian": "Perzisch",
+                    "mejs.polish": "Pools",
+                    "mejs.portuguese": "Portugees",
+                    "mejs.romanian": "Roemeens",
+                    "mejs.russian": "Russisch",
+                    "mejs.serbian": "Servisch",
+                    "mejs.slovak": "Slowaaks",
+                    "mejs.slovenian": "Sloveens",
+                    "mejs.spanish": "Spaans",
+                    "mejs.swahili": "Swahili",
+                    "mejs.swedish": "Zweeds",
+                    "mejs.tagalog": "Tagalog",
+                    "mejs.thai": "Thai",
+                    "mejs.turkish": "Turks",
+                    "mejs.ukrainian": "Oekra\u00efens",
+                    "mejs.vietnamese": "Vietnamese",
+                    "mejs.welsh": "Welsh",
+                    "mejs.yiddish": "Jiddisch",
+                    "mejs.a11y-audio-description": "Audiobeschrijving Aan\/Uit (AD)",
+                    "mejs.a11y-video-description": "Gebarentaal Aan\/Uit",
+                    "mejs.replay": "Opnieuw afspelen",
+                    "mejs.enable-audio-description": "Audiobeschrijving afspelen (AD)",
+                    "mejs.disable-audio-description": "Audiobeschrijving stoppen (AD)",
+                    "mejs.enable-closed-captions": "Ondertiteling aan (CC)",
+                    "mejs.disable-closed-captions": "Ondertiteling uit (CC)",
+                    "mejs.enable-full-screen": "Schermvullende weergave openen",
+                    "mejs.disable-full-screen": "Schermvullende weergave sluiten",
+                    "mejs.enable-video-description": "Gebarentaal tonen",
+                    "mejs.disable-video-description": "Gebarentaal verbergen"
+                }
+            }
+        };
+        /*]]>*/
+    </script>
+</head>
+<body>
+    <section class="mediaplayer">
+        <video
+                playsinline
+                data-audio-description='[{"src": "/Resources/Public/Videos/audiodescriptie.mp3", "type": "audio/mpeg"}]'
+                data-video-description='[{"src": "/Resources/Public/Videos/doventolk.mp4", "type": "video/mp4"}]'
+                data-poster="/Resources/Public/Images/Aerdenhout_Haringbuyshuisje.jpg"
+                style="width:100%;height:100%;"
+                data-noplugintxt="Er is iets foutgegaan bij het starten van de video stream. Controleer of u een recente Flash plugin geinstalleerd heeft."
+                preload="auto"
+                crossorigin="anonymous"
+        >
+            <source
+                    src="/Resources/Public/Videos/video.mp4"
+                    type="video/mp4"
+            >
+            <track
+                    srclang="nl"
+                    label="Nederlands"
+                    kind="subtitles"
+                    src="/Resources/Public/Videos/ondertiteling.srt"
+            >
+        </video>
+        <div
+                class="transcript transcript--open"
+                data-transcript-trigger="transcript__button"
+                data-transcript-target="transcript__panel"
+        >
+            <h2 class="transcript__header">
+                <button
+                        class="transcript__button rs_preserve"
+                        id="transcript__header-1"
+                        aria-expanded="true"
+                        aria-controls="transcript__panel-1"
+                >
+                    Tekstalternatief
+                    <svg viewBox="0 0 32 32" class="transcript__toggle-icon" role="img" aria-hidden="true">
+                        <use xlink:href="/Resources/Public/Icons/Arrows.svg#chevron-down"></use>
+                    </svg>
+                </button>
+            </h2>
+            <div
+                    class="transcript__panel"
+                    id="transcript__panel-1"
+                    aria-labelledby="transcript__header-1"
+            >
+                <div class="transcript__content">
+                    <p>Hans, teammanager dienstverlening stapt uit een trein.</p>
+                    <p>
+                        "Sinds twee jaar werk ik met veel
+                        <br>
+                        plezier bij de gemeente Bloemendaal.   "
+                    </p>
+                    <p>
+                        "Bij ons krijg je veel eigen
+                        <br>
+                        verantwoordelijkheid...
+                        <br>
+                        "
+                    </p>
+                    <p>
+                        "en alle ruimte om
+                        <br>
+                        je te ontwikkelen.   "
+                    </p>
+                    <p>Hessel, coordinator duurzaamheid zit op een fiets.</p>
+                    <p>
+                        "Ik woon in Haarlem niet ver
+                        <br>
+                        van het gemeentehuis... "
+                    </p>
+                    <p>
+                        "en vind het fijn om elke dag
+                        <br>
+                        door deze groene omgeving..."
+                    </p>
+                    <p>" naar mijn werk te fietsen. "</p>
+                    <p>
+                        "Gemeentehuis is daarnaast
+                        <br>
+                        ook goed bereikbaar...
+                        <br>
+                        "
+                    </p>
+                    <p>"zowel met de trein als met de auto."</p>
+                    <p>Hessel parkeert de fiets in een rek en vervolgt zijn weg naar de ingang van het gemeentehuis.  Hij zwaait naar Margot, medewerker publieksbali.</p>
+                    <p>
+                        "Elke dag heb ik contact met
+                        <br>
+                        inwoners van onze gemeente. "
+                    </p>
+                    <p>
+                        "Ik help ze graag bij het
+                        <br>
+                        regelen van hun zaken... "
+                    </p>
+                    <p>
+                        "en ik ben er trots op dat we
+                        <br>
+                        elke dag voor elkaar boksen... "
+                    </p>
+                    <p>
+                        "dat mensen met een glimlach
+                        <br>
+                        weer de deur uit gaan."
+                    </p>
+                    <p>Anne, Adviseur P N O, parkeert haar auto en stapt uit.</p>
+                    <p>
+                        "Het is heel fijn dat ik bij Bloemendaal
+                        <br>
+                        werk en privé goed kan combineren..."
+                    </p>
+                    <p>
+                        "met twee kleine kinderen
+                        <br>
+                        is dat best puzzelen..."
+                    </p>
+                    <p>
+                        "maar dankzij de flexibele
+                        <br>
+                        werktijden gaat het goed. "
+                    </p>
+                    <p>
+                        "We hebben ook alle voorzieningen
+                        <br>
+                        om efficiënt thuis te kunnen werken."
+                    </p>
+                    <p>Langs de entree vervolgt ze haar weg door een lichte hoge ruimte. Er staat een zwarte vleugel.</p>
+                    <p>"Doordat we een kleine gemeente zijn... "</p>
+                    <p>
+                        "Heb je een breed pakket
+                        <br>
+                        aan werkzaamheden."
+                    </p>
+                    <p>
+                        "Dat zorgt voor afwisseling
+                        <br>
+                        en uitdaging in je werk."
+                    </p>
+                    <p>"Geen dag is hetzelfde."</p>
+                    <p>Zes collega's overleggen in een lichte vergaderruimte. Ze wijzen op een tablet.</p>
+                    <p>
+                        "Een ander voordeel van
+                        <br>
+                        werken bij een kleine gemeente... "
+                    </p>
+                    <p>
+                        "zijn de korte lijnen
+                        <br>
+                        en het directe contact...
+                        <br>
+                        "
+                    </p>
+                    <p>"met het management en bestuur. "</p>
+                    <p>
+                        "De sfeer is informeel en je loopt zo
+                        <br>
+                        even bij de burgemeester naar binnen. "
+                    </p>
+                    <p>Collega's lachend aan de lunchtafel</p>
+                    <p>
+                        "Sinds ik hier werk heb ik
+                        <br>
+                        meerdere trainingen gevolgd."
+                    </p>
+                    <p>
+                        " Ik heb me zowel inhoudelijk
+                        <br>
+                        als persoonlijk ontwikkeld. "
+                    </p>
+                    <p>
+                        "Je krijgt ook de ruimte om naast je
+                        <br>
+                        functie mee te werken... "
+                    </p>
+                    <p>
+                        "
+                        <br>
+                        aan bijvoorbeeld projecten of klussen."
+                    </p>
+                    <p>
+                        "Op deze manier kun je
+                        <br>
+                        je blijven ontwikkelen..."
+                    </p>
+                    <p>"en dat vind ik erg belangrijk."</p>
+                    <p>Sabine, stagaire P N O, zit met Anne op een bank</p>
+                    <p>
+                        "Ik wist eerst niet precies wat
+                        <br>
+                        de gemeente te bieden heeft. "
+                    </p>
+                    <p>
+                        "Maar nu tijdens mijn stage
+                        <br>
+                        ben ik erachter gekomen... "
+                    </p>
+                    <p>
+                        "dat het hier hartstikke
+                        <br>
+                        leuk en leerzaam is. "
+                    </p>
+                    <p>
+                        "Ik heb hier meer geleerd
+                        <br>
+                        dan mijn studiegenoten..."
+                    </p>
+                    <p>"Die ergens anders stage liepen. "</p>
+                    <p>
+                        "Werken bij Bloemendaal
+                        <br>
+                        is echt een aanrader. "
+                    </p>
+                    <p>"Ook voor jongeren."</p>
+                    <p>
+                        "Werken bij Bloemendaal
+                        <br>
+                        is heel afwisselend."
+                    </p>
+                    <p>"Hectisch, maar nooit saai."</p>
+                    <p>"Elke dag anders."</p>
+                    <p>"Leuke collega's."</p>
+                    <p>
+                        " Werken bij de gemeente Bloemendaal
+                        <br>
+                        is samen met mijn collega's gaan..."
+                    </p>
+                    <p>
+                        "voor de beste kwaliteit
+                        <br>
+                        voor onze inwoners."
+                    </p>
+                    <p>
+                        Beeldtekst: Werken bij gemeente Bloemendaal ook iets voor jou?
+                        <br>
+                        Zes gekleurde bloemblaadjes vormen samen het Logo van Gemeente Bloemendaal.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
